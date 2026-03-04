@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* My Edits */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* My Edits */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +30,47 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* My Edits */
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  background: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* - The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons. */
